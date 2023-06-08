@@ -1,4 +1,9 @@
+https://codeup.kr/problem.php?id=6081
+
 n = int(input(), 16)
 print(n)
 for i in range(1, 16) :
   print('%X'%n, '*%X'%i, '=%X'%(n*i), sep='')
+
+=> int(input(), 16) => 16진수 받아서 정수값으로 변환
+=> '%X'%n => n에 저장되어 있는 정수 값을 16진수로 변환
