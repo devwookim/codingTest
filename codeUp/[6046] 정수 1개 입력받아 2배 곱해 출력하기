@@ -1,0 +1,7 @@
+https://codeup.kr/problem.php?id=6046
+
+a=int(input())
+print(a<<1)
+
+=> 2진수 한칸 옆으로 옮긴다고 생각하면 편함 응용도 가능
+
