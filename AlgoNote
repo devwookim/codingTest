@@ -65,3 +65,7 @@ result = [ i for i in a if i not in remove_set ]
 # f-String 문법
 => answer = 7 
 => print(f"정답은 {answer} 입니다.")
+
+
+😀n*n 크기의 판에서 움직이는 법😀
+steps or move_types로 좌표를 지정해두자
