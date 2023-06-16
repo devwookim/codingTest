@@ -1,0 +1,9 @@
+https://www.acmicpc.net/problem/2869
+
+시간제한이 있어서 문제가 조금 어려웠다. 주어지는 입력 예시를 보면 반복문으로 돌리지 말라는 힌트를 얻을 수 있다.
+
+a,b,v = map(int,input().split())
+
+day = (v-b)/(a-b)
+//전체 길이 도달(잠 자는 거 빼고)/하루 동안 가는 양
+print(int(day) if day == int(day) else int(day)+1)
