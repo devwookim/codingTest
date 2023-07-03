@@ -1,0 +1,20 @@
+내가 푼 풀이보다 다른 사람의 풀이가 더 간결해서 참고하려고 작성
+
+<나의 풀이>
+def solution(n):
+    if n % 2 == 0 :
+        list = [i**2 for i in range(n+1) if i%2==0 ]
+    else:
+        list = [i for i in range(n+1) if i%2 ==1 ]
+    return sum(list)
+
+
+<다른 풀이1> => 홀수 짝수 경우를 예쁘게 잘 나눴다.. 감동
+def solution(n):
+    return sum(x ** (2 - x % 2) for x in range(n + 1) if n % 2 == x % 2)
+
+<다른 풀이2> => n%2 => 0 => True
+def solution(n):
+    if n%2:
+        return sum(range(1,n+1,2))
+    return sum([i*i for i in range(2,n+1,2)])
