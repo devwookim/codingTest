@@ -1,0 +1,36 @@
+파이썬으로 이렇게 짜놓으면 욕 먹겠다.
+아래 코드를 2가지 방법으로 리팩토링 해보자.
+
+def solution(ineq, eq, n, m):
+    answer = 0 
+    if ineq == '>' and eq =='=':
+        if n>=m :
+            answer = 1
+    elif ineq == '>' and eq =='!':
+        if n>m :
+            answer = 1
+    elif ineq == '<' and eq =='=':
+        if n<=m :
+            answer = 1 
+    elif ineq == '<' and eq =='!':
+        if n<m :
+            answer = 1
+    return answer
+
+<refac1>
+def solution(ineq, eq, n, m):
+    return int(eval(str(n)+ineq+eq.replace('!', '')+str(m)))
+
+<refac2>
+def solution(ineq, eq, n, m):
+    answer = 0
+    if n > m and ineq ==">":
+        answer = 1
+    elif n < m and ineq == "<":
+        answer = 1
+    elif n == m and eq == "=":
+        answer = 1
+
+    return answer
+
+좀 더 클린하게 짜는 코드를 연습해보자
