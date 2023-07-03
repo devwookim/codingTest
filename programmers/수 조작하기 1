@@ -1,0 +1,29 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181926
+
+def solution(n, control):
+    for i in control :
+        print(i)
+        if i == "w":
+            n += 1
+        elif i == "a":
+            n -= 10
+        elif i == "s":
+            n -= 1 
+        elif i == "d":
+            n += 10
+    return n
+
+
+
+<다른 사람 풀이1>
+def solution(n, control):
+    answer = n
+    c = { 'w':1, 's':-1, 'd':10, 'a':-10}
+    for i in control:
+        answer += c[i]
+    return answer
+
+
+<다른 사람 풀이2>
+def solution(n, control):
+    return n + 10*(control.count('d')-control.count('a')) + (control.count('w')-control.count('s'))
