@@ -1,0 +1,13 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181855
+
+입출력 예
+strArr	result
+["a","bc","d","efg","hi"]	2
+
+def solution(strArr):
+    a=[0]*31
+    for x in strArr: a[len(x)]+=1
+    print(a)
+    return max(a)
+
+append 사용 보다 초기 리스트 세팅하기
