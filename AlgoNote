@@ -62,6 +62,7 @@ result = [ i for i in a if i not in remove_set ]
 => sys.stdin.readline().rstrip()
 
 # 문자열도 인덱싱과 슬라이싱 가능
+※리스트 처럼 접근은 가능하지만 문자열[1] = 'a' 이런식으로 변경은 불가 => 문자열.replace('a','b') 이런식으로 바꿔야 함
 
 # f-String 문법
 => answer = 7 
