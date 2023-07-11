@@ -1,0 +1,20 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181868
+
+다양한 방법들이 있어서 커밋해본다.
+
+def solution(my_string):
+    return [i for i in my_string.split(" ") if i != ""]
+
+
+
+def solution(my_string):
+    my_string = my_string.strip()
+    words = my_string.split()
+    return words
+
+
+def solution(my_string):
+    while '  ' in my_string:
+        my_string = my_string.replace('  ', ' ')
+
+    return my_string.strip().split()
