@@ -35,6 +35,7 @@
 => list.append(2) => 원소 하나 삽입할 때 
 
 => list.sort() or list.sort(reverse=True) => 정렬
+※문자도 정렬이 된다
 
 => list.reverse() => 원소 뒤집기
 
