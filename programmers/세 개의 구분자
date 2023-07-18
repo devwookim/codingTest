@@ -1,0 +1,10 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181862
+
+<나의 풀이>
+def solution(myStr):
+    myStr = myStr.replace('a',' ').replace('b',' ').replace('c',' ')
+    a = myStr.split()
+    return a if len(a) > 0 else ["EMPTY"]
+
+
+※replace().replace().replace()  
