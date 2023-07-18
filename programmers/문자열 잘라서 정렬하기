@@ -1,0 +1,20 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181866
+
+
+[나의 풀이]
+def solution(myString):
+    arr= []
+    answer = myString.split('x')
+    for i in answer:
+        if i =='':
+            pass
+        else :
+            arr.append(i)
+    arr.sort()
+
+    return arr
+
+
+[나도 쉽게 풀 기 가능]
+def solution(myString):
+    return sorted(ch for ch in myString.split('x') if ch)
