@@ -50,6 +50,15 @@ a = [1, 2, 3, 4, 5, 5, 5]
 remove_set = {3 , 5}
 result = [ i for i in a if i not in remove_set ] 
 
+#enumerate
+=> 인덱스와 원소를 동시에 접근할 수 있는 함수
+for entry in enumerate(['A', 'B', 'C']):
+...     print(entry)
+...
+(0, 'A')
+(1, 'B')
+(2, 'C')
+
 
 😀문자열😀
 
