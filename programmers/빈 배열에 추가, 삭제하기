@@ -1,0 +1,33 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181860
+
+<나의 풀이>
+def solution(arr, flag):
+    answer = []
+    for i in range(len(arr)) :
+        if flag[i] :
+            answer += [arr[i]]*arr[i]*2
+        else :
+            answer = answer[:len(answer)-arr[i]]
+    return answer
+
+<pop 이용 풀이>
+def solution(arr, flag):
+    ret = []
+    for i, f in enumerate(flag):
+        if f:
+            ret.extend([arr[i]] * arr[i] * 2)
+        else:
+            for j in range(arr[i]):
+                ret.pop()
+
+    return ret
+
+
+※
+enumerate => 인덱스와 원소를 동시에 접근할 수 있는 함수
+for entry in enumerate(['A', 'B', 'C']):
+...     print(entry)
+...
+(0, 'A')
+(1, 'B')
+(2, 'C')
