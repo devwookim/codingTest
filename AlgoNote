@@ -59,6 +59,11 @@ for entry in enumerate(['A', 'B', 'C']):
 (1, 'B')
 (2, 'C')
 
+#값이 여러개 있는 리스트에서 index 찾기
+=>enumerate 사용
+[i for i, ele in enumerate(lis) if ele == 1]
+[0, 2]
+
 
 😀문자열😀
 
