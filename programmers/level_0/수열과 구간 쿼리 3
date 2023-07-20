@@ -1,0 +1,17 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181924
+
+<나의 풀이>
+def solution(arr, queries):
+    for a in queries :
+        temp = arr[a[0]]
+        arr[a[0]] = arr[a[1]]
+        arr[a[1]] = temp
+    return arr
+
+<참고 풀이>
+def solution(arr, queries):
+    for a,b in queries:
+        arr[a],arr[b]=arr[b],arr[a]
+    return arr
+
+※ queries에는 [[1,2],[2,4],[3,6]] 식으로 있어서 for문 저렇게 만듬
