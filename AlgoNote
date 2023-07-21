@@ -79,6 +79,10 @@ for entry in enumerate(['A', 'B', 'C']):
 # 문자열도 인덱싱과 슬라이싱 가능
 ※리스트 처럼 접근은 가능하지만 문자열[1] = 'a' 이런식으로 변경은 불가 => 문자열.replace('a','b') 이런식으로 바꿔야 함
 
+#시작 문자 확인
+=>str.startswith(문자)
+my_string.startswith("확인문자")
+
 # f-String 문법
 => answer = 7 
 => print(f"정답은 {answer} 입니다.")
