@@ -64,6 +64,8 @@ for entry in enumerate(['A', 'B', 'C']):
 [i for i, ele in enumerate(lis) if ele == 1]
 [0, 2]
 
+#reverse와 reversed
+
 
 😀문자열😀
 
