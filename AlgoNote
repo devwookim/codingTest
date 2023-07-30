@@ -66,6 +66,9 @@ for entry in enumerate(['A', 'B', 'C']):
 [i for i, ele in enumerate(lis) if ele == 1]
 [0, 2]
 
+#zip 길이가 같은 두 배열 하나로 묶기
+[a*b for a,b in zip(arr1,arr2)]
+
 #reverse와 reversed
 
 
